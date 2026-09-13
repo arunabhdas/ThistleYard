@@ -20,11 +20,12 @@ Keyboard controls are included for the simulator:
 
 ## Build
 
-The quickest way is the setup script, which regenerates the project (if `xcodegen` is installed), builds for the iOS Simulator, and opens it in Xcode:
+The quickest way is the setup script, which regenerates the project (if `xcodegen` is installed), builds for the iOS Simulator, and then asks whether to open it in Xcode:
 
 ```bash
 cd OffsideRun
-./setup.sh            # build and open in Xcode
+./setup.sh            # build, then prompt before opening Xcode
+./setup.sh --open     # build and open Xcode without prompting
 ./setup.sh --no-open  # build only
 ./setup.sh --clean    # wipe Build/DerivedData first
 ```
