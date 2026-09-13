@@ -1,2 +1,0 @@
-Target dependency graph (1 target)
-Target 'OffsideRun' in project 'OffsideRun' (no dependencies)

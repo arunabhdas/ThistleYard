@@ -20,10 +20,19 @@ Keyboard controls are included for the simulator:
 
 ## Build
 
-Generate the Xcode project:
+The quickest way is the setup script, which regenerates the project (if `xcodegen` is installed), builds for the iOS Simulator, and opens it in Xcode:
 
 ```bash
-cd "/Users/coder/repos/offsideai/githubrepos_workspace_active_1/jsx-viewer/Offside Run"
+cd OffsideRun
+./setup.sh            # build and open in Xcode
+./setup.sh --no-open  # build only
+./setup.sh --clean    # wipe Build/DerivedData first
+```
+
+Or do the steps by hand. Generate the Xcode project:
+
+```bash
+cd OffsideRun
 xcodegen generate
 ```
 

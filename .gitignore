@@ -1,0 +1,34 @@
+# macOS
+.DS_Store
+._*
+
+# Xcode build output
+OffsideRun/Build/
+build/
+DerivedData/
+*.xcresult
+
+# Xcode user state
+xcuserdata/
+*.xcuserstate
+*.xcworkspace/xcshareddata/
+*.xcodeproj/project.xcworkspace/xcuserdata/
+*.moved-aside
+
+# Swift Package Manager
+.build/
+.swiftpm/
+Package.resolved
+
+# Secrets and local config
+.env
+.env.*
+*.pem
+*.p12
+*.mobileprovision
+
+# Editors and tooling
+.vscode/
+.idea/
+*.swp
+*.log
