@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Thistle Yard 3D</title>
+    <link rel="stylesheet" href="styles.css?v=4">
+  </head>
+  <body>
+    <main class="shell">
+      <section class="game-frame" aria-label="Thistle Yard 3D game">
+        <div id="stage" aria-hidden="true"></div>
+        <div class="hud">
+          <div class="brand">
+            <span class="crest"></span>
+            <div>
+              <strong>Thistle Yard 3D</strong>
+              <span>Highland case file</span>
+            </div>
+          </div>
+          <div class="meter"><span id="hearts">♥♥♥</span><small>hearts</small></div>
+          <div class="meter"><span id="coins">0</span><small>crowns</small></div>
+          <div class="meter"><span id="clues">0/4</span><small>clues</small></div>
+        </div>
+        <div class="brief" id="brief">
+          <strong>Controls</strong>
+          <span>Move: A/D or arrows</span>
+          <span>Jump: W / ↑ / Space</span>
+          <span>Climb: K x3 or W/S near ladders</span>
+          <span>Aim + sling: mouse drag</span>
+          <span>Strike: J</span>
+        </div>
+        <div class="mission" id="mission">Collect four clues, outwit the Yard, and reach the bell gate.</div>
+        <div class="notice" id="notice" role="status" aria-live="polite"></div>
+        <button id="restart" type="button">Restart Case</button>
+      </section>
+    </main>
+    <script type="module" src="game3d.mjs?v=1"></script>
+  </body>
+</html>

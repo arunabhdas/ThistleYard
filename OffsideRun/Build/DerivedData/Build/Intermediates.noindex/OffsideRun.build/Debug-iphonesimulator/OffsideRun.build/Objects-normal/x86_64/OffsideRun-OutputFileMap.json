@@ -1,0 +1,39 @@
+{
+  "" : {
+    "diagnostics" : "/Users/coder/repos/offsideai/githubrepos_workspace_active_1/jsx-viewer/Offside Run/Build/DerivedData/Build/Intermediates.noindex/OffsideRun.build/Debug-iphonesimulator/OffsideRun.build/Objects-normal/x86_64/OffsideRun-primary.dia",
+    "emit-module-dependencies" : "/Users/coder/repos/offsideai/githubrepos_workspace_active_1/jsx-viewer/Offside Run/Build/DerivedData/Build/Intermediates.noindex/OffsideRun.build/Debug-iphonesimulator/OffsideRun.build/Objects-normal/x86_64/OffsideRun-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/coder/repos/offsideai/githubrepos_workspace_active_1/jsx-viewer/Offside Run/Build/DerivedData/Build/Intermediates.noindex/OffsideRun.build/Debug-iphonesimulator/OffsideRun.build/Objects-normal/x86_64/OffsideRun-primary-emit-module.dia",
+    "pch" : "/Users/coder/repos/offsideai/githubrepos_workspace_active_1/jsx-viewer/Offside Run/Build/DerivedData/Build/Intermediates.noindex/OffsideRun.build/Debug-iphonesimulator/OffsideRun.build/Objects-normal/x86_64/OffsideRun-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/coder/repos/offsideai/githubrepos_workspace_active_1/jsx-viewer/Offside Run/Build/DerivedData/Build/Intermediates.noindex/OffsideRun.build/Debug-iphonesimulator/OffsideRun.build/Objects-normal/x86_64/OffsideRun-primary.swiftdeps"
+  },
+  "/Users/coder/repos/offsideai/githubrepos_workspace_active_1/jsx-viewer/Offside Run/OffsideRun/GameView.swift" : {
+    "const-values" : "/Users/coder/repos/offsideai/githubrepos_workspace_active_1/jsx-viewer/Offside Run/Build/DerivedData/Build/Intermediates.noindex/OffsideRun.build/Debug-iphonesimulator/OffsideRun.build/Objects-normal/x86_64/GameView.swiftconstvalues",
+    "dependencies" : "/Users/coder/repos/offsideai/githubrepos_workspace_active_1/jsx-viewer/Offside Run/Build/DerivedData/Build/Intermediates.noindex/OffsideRun.build/Debug-iphonesimulator/OffsideRun.build/Objects-normal/x86_64/GameView.d",
+    "diagnostics" : "/Users/coder/repos/offsideai/githubrepos_workspace_active_1/jsx-viewer/Offside Run/Build/DerivedData/Build/Intermediates.noindex/OffsideRun.build/Debug-iphonesimulator/OffsideRun.build/Objects-normal/x86_64/GameView.dia",
+    "index-unit-output-path" : "/OffsideRun.build/Debug-iphonesimulator/OffsideRun.build/Objects-normal/x86_64/GameView.o",
+    "llvm-bc" : "/Users/coder/repos/offsideai/githubrepos_workspace_active_1/jsx-viewer/Offside Run/Build/DerivedData/Build/Intermediates.noindex/OffsideRun.build/Debug-iphonesimulator/OffsideRun.build/Objects-normal/x86_64/GameView.bc",
+    "object" : "/Users/coder/repos/offsideai/githubrepos_workspace_active_1/jsx-viewer/Offside Run/Build/DerivedData/Build/Intermediates.noindex/OffsideRun.build/Debug-iphonesimulator/OffsideRun.build/Objects-normal/x86_64/GameView.o",
+    "swift-dependencies" : "/Users/coder/repos/offsideai/githubrepos_workspace_active_1/jsx-viewer/Offside Run/Build/DerivedData/Build/Intermediates.noindex/OffsideRun.build/Debug-iphonesimulator/OffsideRun.build/Objects-normal/x86_64/GameView.swiftdeps",
+    "swiftmodule" : "/Users/coder/repos/offsideai/githubrepos_workspace_active_1/jsx-viewer/Offside Run/Build/DerivedData/Build/Intermediates.noindex/OffsideRun.build/Debug-iphonesimulator/OffsideRun.build/Objects-normal/x86_64/GameView~partial.swiftmodule"
+  },
+  "/Users/coder/repos/offsideai/githubrepos_workspace_active_1/jsx-viewer/Offside Run/OffsideRun/OffsideRunApp.swift" : {
+    "const-values" : "/Users/coder/repos/offsideai/githubrepos_workspace_active_1/jsx-viewer/Offside Run/Build/DerivedData/Build/Intermediates.noindex/OffsideRun.build/Debug-iphonesimulator/OffsideRun.build/Objects-normal/x86_64/OffsideRunApp.swiftconstvalues",
+    "dependencies" : "/Users/coder/repos/offsideai/githubrepos_workspace_active_1/jsx-viewer/Offside Run/Build/DerivedData/Build/Intermediates.noindex/OffsideRun.build/Debug-iphonesimulator/OffsideRun.build/Objects-normal/x86_64/OffsideRunApp.d",
+    "diagnostics" : "/Users/coder/repos/offsideai/githubrepos_workspace_active_1/jsx-viewer/Offside Run/Build/DerivedData/Build/Intermediates.noindex/OffsideRun.build/Debug-iphonesimulator/OffsideRun.build/Objects-normal/x86_64/OffsideRunApp.dia",
+    "index-unit-output-path" : "/OffsideRun.build/Debug-iphonesimulator/OffsideRun.build/Objects-normal/x86_64/OffsideRunApp.o",
+    "llvm-bc" : "/Users/coder/repos/offsideai/githubrepos_workspace_active_1/jsx-viewer/Offside Run/Build/DerivedData/Build/Intermediates.noindex/OffsideRun.build/Debug-iphonesimulator/OffsideRun.build/Objects-normal/x86_64/OffsideRunApp.bc",
+    "object" : "/Users/coder/repos/offsideai/githubrepos_workspace_active_1/jsx-viewer/Offside Run/Build/DerivedData/Build/Intermediates.noindex/OffsideRun.build/Debug-iphonesimulator/OffsideRun.build/Objects-normal/x86_64/OffsideRunApp.o",
+    "swift-dependencies" : "/Users/coder/repos/offsideai/githubrepos_workspace_active_1/jsx-viewer/Offside Run/Build/DerivedData/Build/Intermediates.noindex/OffsideRun.build/Debug-iphonesimulator/OffsideRun.build/Objects-normal/x86_64/OffsideRunApp.swiftdeps",
+    "swiftmodule" : "/Users/coder/repos/offsideai/githubrepos_workspace_active_1/jsx-viewer/Offside Run/Build/DerivedData/Build/Intermediates.noindex/OffsideRun.build/Debug-iphonesimulator/OffsideRun.build/Objects-normal/x86_64/OffsideRunApp~partial.swiftmodule"
+  },
+  "/Users/coder/repos/offsideai/githubrepos_workspace_active_1/jsx-viewer/Offside Run/OffsideRun/OffsideRunScene.swift" : {
+    "const-values" : "/Users/coder/repos/offsideai/githubrepos_workspace_active_1/jsx-viewer/Offside Run/Build/DerivedData/Build/Intermediates.noindex/OffsideRun.build/Debug-iphonesimulator/OffsideRun.build/Objects-normal/x86_64/OffsideRunScene.swiftconstvalues",
+    "dependencies" : "/Users/coder/repos/offsideai/githubrepos_workspace_active_1/jsx-viewer/Offside Run/Build/DerivedData/Build/Intermediates.noindex/OffsideRun.build/Debug-iphonesimulator/OffsideRun.build/Objects-normal/x86_64/OffsideRunScene.d",
+    "diagnostics" : "/Users/coder/repos/offsideai/githubrepos_workspace_active_1/jsx-viewer/Offside Run/Build/DerivedData/Build/Intermediates.noindex/OffsideRun.build/Debug-iphonesimulator/OffsideRun.build/Objects-normal/x86_64/OffsideRunScene.dia",
+    "index-unit-output-path" : "/OffsideRun.build/Debug-iphonesimulator/OffsideRun.build/Objects-normal/x86_64/OffsideRunScene.o",
+    "llvm-bc" : "/Users/coder/repos/offsideai/githubrepos_workspace_active_1/jsx-viewer/Offside Run/Build/DerivedData/Build/Intermediates.noindex/OffsideRun.build/Debug-iphonesimulator/OffsideRun.build/Objects-normal/x86_64/OffsideRunScene.bc",
+    "object" : "/Users/coder/repos/offsideai/githubrepos_workspace_active_1/jsx-viewer/Offside Run/Build/DerivedData/Build/Intermediates.noindex/OffsideRun.build/Debug-iphonesimulator/OffsideRun.build/Objects-normal/x86_64/OffsideRunScene.o",
+    "swift-dependencies" : "/Users/coder/repos/offsideai/githubrepos_workspace_active_1/jsx-viewer/Offside Run/Build/DerivedData/Build/Intermediates.noindex/OffsideRun.build/Debug-iphonesimulator/OffsideRun.build/Objects-normal/x86_64/OffsideRunScene.swiftdeps",
+    "swiftmodule" : "/Users/coder/repos/offsideai/githubrepos_workspace_active_1/jsx-viewer/Offside Run/Build/DerivedData/Build/Intermediates.noindex/OffsideRun.build/Debug-iphonesimulator/OffsideRun.build/Objects-normal/x86_64/OffsideRunScene~partial.swiftmodule"
+  }
+}
