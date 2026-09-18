@@ -1,0 +1,380 @@
+[
+  {
+    "conservative" : true,
+    "holeID" : "whispering-coast-01",
+    "par" : 3,
+    "penalties" : 0,
+    "shots" : [
+      {
+        "aimDeltaDegrees" : 0,
+        "aimX" : 0,
+        "aimY" : 1,
+        "club" : "fiveIron",
+        "power" : 0.4,
+        "puttRange" : "long",
+        "strokes" : 1
+      },
+      {
+        "aimDeltaDegrees" : 0,
+        "aimX" : 0,
+        "aimY" : 1,
+        "club" : "pitchingWedge",
+        "power" : 0.1,
+        "puttRange" : "long",
+        "strokes" : 2
+      },
+      {
+        "aimDeltaDegrees" : 0,
+        "aimX" : 0,
+        "aimY" : -1,
+        "club" : "putter",
+        "power" : 0.91,
+        "puttRange" : "short",
+        "strokes" : 3
+      }
+    ],
+    "strokes" : 3,
+    "windMPH" : 0
+  },
+  {
+    "conservative" : true,
+    "holeID" : "whispering-coast-02",
+    "par" : 4,
+    "penalties" : 0,
+    "shots" : [
+      {
+        "aimDeltaDegrees" : 0,
+        "aimX" : 0.08283220672740615,
+        "aimY" : 0.9965635080257895,
+        "club" : "fiveIron",
+        "power" : 0.4,
+        "puttRange" : "long",
+        "strokes" : 1
+      },
+      {
+        "aimDeltaDegrees" : 3,
+        "aimX" : -0.28879793096614614,
+        "aimY" : 0.9573900746663677,
+        "club" : "fiveIron",
+        "power" : 0.39,
+        "puttRange" : "long",
+        "strokes" : 2
+      },
+      {
+        "aimDeltaDegrees" : 0,
+        "aimX" : -0.11471384075901835,
+        "aimY" : 0.9933985779828329,
+        "club" : "sandWedge",
+        "power" : 0.6,
+        "puttRange" : "long",
+        "strokes" : 3
+      }
+    ],
+    "strokes" : 3,
+    "windMPH" : 2
+  },
+  {
+    "conservative" : true,
+    "holeID" : "whispering-coast-03",
+    "par" : 4,
+    "penalties" : 0,
+    "shots" : [
+      {
+        "aimDeltaDegrees" : 0,
+        "aimX" : -0.07568589320755259,
+        "aimY" : 0.9971317092387418,
+        "club" : "fiveIron",
+        "power" : 0.4,
+        "puttRange" : "long",
+        "strokes" : 1
+      },
+      {
+        "aimDeltaDegrees" : 0,
+        "aimX" : 0.1864725343868291,
+        "aimY" : 0.9824601742153993,
+        "club" : "fiveIron",
+        "power" : 0.4,
+        "puttRange" : "long",
+        "strokes" : 2
+      },
+      {
+        "aimDeltaDegrees" : 0,
+        "aimX" : 0.1820973316463068,
+        "aimY" : 0.9832805102346406,
+        "club" : "pitchingWedge",
+        "power" : 0.64,
+        "puttRange" : "long",
+        "strokes" : 3
+      },
+      {
+        "aimDeltaDegrees" : -4,
+        "aimX" : 0.16087392685289986,
+        "aimY" : 0.9869749640486973,
+        "club" : "putter",
+        "power" : 0.73,
+        "puttRange" : "short",
+        "strokes" : 4
+      }
+    ],
+    "strokes" : 4,
+    "windMPH" : 4
+  },
+  {
+    "conservative" : true,
+    "holeID" : "whispering-coast-04",
+    "par" : 3,
+    "penalties" : 0,
+    "shots" : [
+      {
+        "aimDeltaDegrees" : 0,
+        "aimX" : 0,
+        "aimY" : 1,
+        "club" : "fiveIron",
+        "power" : 0.4,
+        "puttRange" : "long",
+        "strokes" : 1
+      },
+      {
+        "aimDeltaDegrees" : -2,
+        "aimX" : 0.05847130215345912,
+        "aimY" : 0.9982890898053923,
+        "club" : "putter",
+        "power" : 0.59,
+        "puttRange" : "medium",
+        "strokes" : 2
+      }
+    ],
+    "strokes" : 2,
+    "windMPH" : 2
+  },
+  {
+    "conservative" : true,
+    "holeID" : "whispering-coast-05",
+    "par" : 5,
+    "penalties" : 0,
+    "shots" : [
+      {
+        "aimDeltaDegrees" : -1,
+        "aimX" : 0.15810521481815726,
+        "aimY" : 0.9874222708888556,
+        "club" : "driver",
+        "power" : 0.2,
+        "puttRange" : "long",
+        "strokes" : 1
+      },
+      {
+        "aimDeltaDegrees" : 14,
+        "aimX" : -0.2994912777004866,
+        "aimY" : 0.9540990381408683,
+        "club" : "fiveIron",
+        "power" : 0.4,
+        "puttRange" : "long",
+        "strokes" : 2
+      },
+      {
+        "aimDeltaDegrees" : -6,
+        "aimX" : 0.20047789009218236,
+        "aimY" : 0.9796982267944484,
+        "club" : "fiveIron",
+        "power" : 0.49,
+        "puttRange" : "long",
+        "strokes" : 3
+      },
+      {
+        "aimDeltaDegrees" : 0,
+        "aimX" : -0.1104182238719261,
+        "aimY" : 0.9938852126060479,
+        "club" : "pitchingWedge",
+        "power" : 0.41,
+        "puttRange" : "long",
+        "strokes" : 4
+      },
+      {
+        "aimDeltaDegrees" : 0,
+        "aimX" : 0.11469870368888299,
+        "aimY" : -0.9934003258365128,
+        "club" : "putter",
+        "power" : 0.56,
+        "puttRange" : "short",
+        "strokes" : 5
+      }
+    ],
+    "strokes" : 5,
+    "windMPH" : 3
+  },
+  {
+    "conservative" : true,
+    "holeID" : "whispering-coast-06",
+    "par" : 4,
+    "penalties" : 0,
+    "shots" : [
+      {
+        "aimDeltaDegrees" : 0,
+        "aimX" : -0.0964053988445089,
+        "aimY" : 0.9953421517617101,
+        "club" : "fiveIron",
+        "power" : 0.4,
+        "puttRange" : "long",
+        "strokes" : 1
+      },
+      {
+        "aimDeltaDegrees" : -2,
+        "aimX" : 0.10021704333988135,
+        "aimY" : 0.9949655995179997,
+        "club" : "sevenIron",
+        "power" : 0.41,
+        "puttRange" : "long",
+        "strokes" : 2
+      },
+      {
+        "aimDeltaDegrees" : 0,
+        "aimX" : 0.037029238250148505,
+        "aimY" : 0.9993141825845431,
+        "club" : "fiveIron",
+        "power" : 0.3,
+        "puttRange" : "long",
+        "strokes" : 3
+      },
+      {
+        "aimDeltaDegrees" : 0,
+        "aimX" : 0.02957523732423522,
+        "aimY" : -0.9995625569904142,
+        "club" : "putter",
+        "power" : 0.38,
+        "puttRange" : "medium",
+        "strokes" : 4
+      }
+    ],
+    "strokes" : 4,
+    "windMPH" : 4
+  },
+  {
+    "conservative" : true,
+    "holeID" : "whispering-coast-07",
+    "par" : 3,
+    "penalties" : 0,
+    "shots" : [
+      {
+        "aimDeltaDegrees" : 0,
+        "aimX" : 0,
+        "aimY" : 1,
+        "club" : "driver",
+        "power" : 0.39,
+        "puttRange" : "long",
+        "strokes" : 1
+      },
+      {
+        "aimDeltaDegrees" : -2,
+        "aimX" : 0.04055414250194207,
+        "aimY" : 0.9991773423801863,
+        "club" : "pitchingWedge",
+        "power" : 0.2,
+        "puttRange" : "long",
+        "strokes" : 2
+      },
+      {
+        "aimDeltaDegrees" : -4,
+        "aimX" : -0.41537478570593844,
+        "aimY" : 0.9096503654700225,
+        "club" : "putter",
+        "power" : 0.41,
+        "puttRange" : "short",
+        "strokes" : 3
+      }
+    ],
+    "strokes" : 3,
+    "windMPH" : 3
+  },
+  {
+    "conservative" : true,
+    "holeID" : "whispering-coast-08",
+    "par" : 5,
+    "penalties" : 0,
+    "shots" : [
+      {
+        "aimDeltaDegrees" : 0,
+        "aimX" : -0.1712773721042537,
+        "aimY" : 0.9852228488037927,
+        "club" : "fiveIron",
+        "power" : 0.4,
+        "puttRange" : "long",
+        "strokes" : 1
+      },
+      {
+        "aimDeltaDegrees" : -12,
+        "aimX" : 0.23604040569612075,
+        "aimY" : 0.9717432412313505,
+        "club" : "fiveIron",
+        "power" : 0.4,
+        "puttRange" : "long",
+        "strokes" : 2
+      },
+      {
+        "aimDeltaDegrees" : -3,
+        "aimX" : -0.05630614613883759,
+        "aimY" : 0.9984135505425553,
+        "club" : "fiveIron",
+        "power" : 0.39,
+        "puttRange" : "long",
+        "strokes" : 3
+      },
+      {
+        "aimDeltaDegrees" : 0,
+        "aimX" : -0.20165932516095197,
+        "aimY" : 0.9794557246632586,
+        "club" : "sevenIron",
+        "power" : 0.3,
+        "puttRange" : "long",
+        "strokes" : 4
+      }
+    ],
+    "strokes" : 4,
+    "windMPH" : 4.5
+  },
+  {
+    "conservative" : true,
+    "holeID" : "whispering-coast-09",
+    "par" : 4,
+    "penalties" : 0,
+    "shots" : [
+      {
+        "aimDeltaDegrees" : -2,
+        "aimX" : -0.05961459414486541,
+        "aimY" : 0.9982214684953148,
+        "club" : "fiveIron",
+        "power" : 0.4,
+        "puttRange" : "long",
+        "strokes" : 1
+      },
+      {
+        "aimDeltaDegrees" : 1,
+        "aimX" : 0.17655082678301479,
+        "aimY" : 0.9842915246827203,
+        "club" : "fiveIron",
+        "power" : 0.4,
+        "puttRange" : "long",
+        "strokes" : 2
+      },
+      {
+        "aimDeltaDegrees" : 0,
+        "aimX" : 0.2091414683904849,
+        "aimY" : 0.9778853952276165,
+        "club" : "sevenIron",
+        "power" : 0.54,
+        "puttRange" : "long",
+        "strokes" : 3
+      },
+      {
+        "aimDeltaDegrees" : 0,
+        "aimX" : -0.12144366462380847,
+        "aimY" : -0.9925983257706713,
+        "club" : "putter",
+        "power" : 0.98,
+        "puttRange" : "short",
+        "strokes" : 4
+      }
+    ],
+    "strokes" : 4,
+    "windMPH" : 5
+  }
+]

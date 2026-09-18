@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0354A4496CAE019F31E93E10 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C996DC3D09DA7154AFB5F6E /* GameView.swift */; };
 		8608B71D7C28FDF864B5A9D7 /* OffsideRunScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7B55966758D71E677C7B71 /* OffsideRunScene.swift */; };
+		8FC002D59FF30F35F13237F6 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77014974100CE3A80BD2DB0 /* LandingView.swift */; };
 		B639FCE4484E79DBC860DA77 /* OffsideRunApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB727935AF2B5136BD20D382 /* OffsideRunApp.swift */; };
 /* End PBXBuildFile section */
 
@@ -16,6 +17,7 @@
 		3C996DC3D09DA7154AFB5F6E /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		6F0B2075EC7CA777B6CC8129 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		BB7B55966758D71E677C7B71 /* OffsideRunScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsideRunScene.swift; sourceTree = "<group>"; };
+		D77014974100CE3A80BD2DB0 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
 		E8282EB689F058AF241F83AF /* OffsideRun.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = OffsideRun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB727935AF2B5136BD20D382 /* OffsideRunApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsideRunApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -42,6 +44,7 @@
 			children = (
 				3C996DC3D09DA7154AFB5F6E /* GameView.swift */,
 				6F0B2075EC7CA777B6CC8129 /* Info.plist */,
+				D77014974100CE3A80BD2DB0 /* LandingView.swift */,
 				FB727935AF2B5136BD20D382 /* OffsideRunApp.swift */,
 				BB7B55966758D71E677C7B71 /* OffsideRunScene.swift */,
 			);
@@ -78,7 +81,7 @@
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					E4A3179C6EC38BE3F08ED975 = {
-						DevelopmentTeam = "";
+						DevelopmentTeam = 9L38FSU6M7;
 					};
 				};
 			};
@@ -107,6 +110,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0354A4496CAE019F31E93E10 /* GameView.swift in Sources */,
+				8FC002D59FF30F35F13237F6 /* LandingView.swift in Sources */,
 				B639FCE4484E79DBC860DA77 /* OffsideRunApp.swift in Sources */,
 				8608B71D7C28FDF864B5A9D7 /* OffsideRunScene.swift in Sources */,
 			);
@@ -169,7 +173,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 9L38FSU6M7;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -245,7 +249,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 9L38FSU6M7;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;

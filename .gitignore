@@ -1,34 +1,57 @@
-# macOS
+# ---- macOS ----
 .DS_Store
 ._*
+.Spotlight-V100
+.Trashes
 
-# Xcode build output
-OffsideRun/Build/
+# ---- Xcode / build output ----
+# Both spellings: gitignore patterns are case-sensitive, and this repo uses
+# "Build/" (OffsideRun, OffsideGolf frontend) alongside lowercase tool output.
+Build/
 build/
 DerivedData/
 *.xcresult
+*.xcarchive
+*.ipa
+*.dSYM
+*.dSYM.zip
 
-# Xcode user state
+# ---- Xcode user state ----
+# Shared scheme/workspace settings stay tracked; only per-user state is ignored.
 xcuserdata/
 *.xcuserstate
-*.xcworkspace/xcshareddata/
-*.xcodeproj/project.xcworkspace/xcuserdata/
+*.xcscmblueprint
 *.moved-aside
 
-# Swift Package Manager
+# ---- Swift Package Manager ----
 .build/
 .swiftpm/
-Package.resolved
 
-# Secrets and local config
+# ---- Python tooling (OffsideGolf/Tools) ----
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# ---- Node / web prototype (ThistleYard-prototype) ----
+node_modules/
+npm-debug.log*
+yarn-error.log*
+.parcel-cache/
+dist/
+
+# ---- Signing and secrets ----
 .env
 .env.*
 *.pem
 *.p12
+*.cer
 *.mobileprovision
+*.keystore
 
-# Editors and tooling
+# ---- Editors and misc ----
 .vscode/
 .idea/
 *.swp
+*~
 *.log

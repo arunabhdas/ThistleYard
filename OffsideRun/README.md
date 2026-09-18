@@ -4,10 +4,14 @@ Offside Run is a native iOS SpriteKit endless runner prototype inspired by the f
 
 ## Gameplay
 
+The app opens on a SwiftUI landing screen that explains the obstacles, controls, collectibles, and goal. Tap **Start Run** to play. The game-over screen offers **Back to menu** to return to it.
+
 - Swipe left or right to switch lanes.
-- Swipe up to jump over low obstacles.
-- Swipe down to slide under arches.
-- Tap to swing the scout blade at maskling enemies.
+- Each obstacle shows a colored badge as it approaches telling you the one move that clears it:
+  - **▲ JUMP** (orange): swipe up to jump over a log.
+  - **▼ SLIDE** (blue): swipe down to slide under an arch.
+  - **✕ SWING** (pink): tap to swing the scout blade at a maskling.
+- The same legend sits at the bottom of the screen during a run.
 - Collect crowns and four rune shards.
 - Keep your hearts while the route speeds up.
 

@@ -2,6 +2,15 @@ import SpriteKit
 import UIKit
 
 final class OffsideRunScene: SKScene {
+    /// Called when the player chooses "Back to menu" on the game-over screen.
+    var onExit: (() -> Void)?
+
+    /// Screen safe-area insets (notch, Dynamic Island, home indicator). The
+    /// HUD is laid out inside these; the world still fills the whole screen.
+    var safeInsets: UIEdgeInsets = .zero {
+        didSet { layoutScene() }
+    }
+
     private enum Lane: Int, CaseIterable {
         case left = -1
         case center = 0
@@ -15,7 +24,20 @@ final class OffsideRunScene: SKScene {
         case log
         case arch
         case maskling
-        case thorn
+
+        var isHazard: Bool {
+            switch self {
+            case .log, .arch, .maskling: return true
+            case .crown, .shard, .heart: return false
+            }
+        }
+    }
+
+    /// What the player must do to get past a hazard, shown as a badge above it.
+    private struct HazardCue {
+        let text: String
+        let color: UIColor
+        let yOffset: CGFloat
     }
 
     private final class RunItem {
@@ -24,6 +46,7 @@ final class OffsideRunScene: SKScene {
         var lane: Lane
         var depth: CGFloat
         var active = true
+        var cue: SKNode?
 
         init(kind: ItemKind, node: SKNode, lane: Lane, depth: CGFloat) {
             self.kind = kind
@@ -86,8 +109,10 @@ final class OffsideRunScene: SKScene {
     private let shardsLabel = SKLabelNode(fontNamed: "AvenirNext-Heavy")
     private let distanceLabel = SKLabelNode(fontNamed: "AvenirNext-DemiBold")
     private let hintLabel = SKLabelNode(fontNamed: "AvenirNext-DemiBold")
+    private var legendLabels: [SKLabelNode] = []
     private let messageLabel = SKLabelNode(fontNamed: "AvenirNext-Heavy")
     private let restartLabel = SKLabelNode(fontNamed: "AvenirNext-DemiBold")
+    private let menuLabel = SKLabelNode(fontNamed: "AvenirNext-DemiBold")
 
     override func didMove(to view: SKView) {
         backgroundColor = UIColor(red: 0.58, green: 0.72, blue: 0.66, alpha: 1)
@@ -139,7 +164,7 @@ final class OffsideRunScene: SKScene {
 
         if spawnClock <= 0 {
             spawnHazard()
-            spawnClock = CGFloat.random(in: 0.74...1.15) - min(0.28, distance / 6000)
+            spawnClock = CGFloat.random(in: 1.05...1.5) - min(0.32, distance / 7000)
         }
 
         if coinClock <= 0 {
@@ -162,7 +187,7 @@ final class OffsideRunScene: SKScene {
         hearts = 3
         distance = 0
         runSpeed = 0.24
-        spawnClock = 0.8
+        spawnClock = 1.4
         coinClock = 0.4
         currentLane = .center
         targetLane = .center
@@ -173,7 +198,7 @@ final class OffsideRunScene: SKScene {
         isGameOver = false
         overlayNode.isHidden = true
         player.isHidden = false
-        hintLabel.text = "Swipe lanes, jump, slide, and tap to swing."
+        hintLabel.text = "Swipe to change lanes. Watch the badge on each obstacle."
         updateHud()
         layoutScene()
     }
@@ -346,6 +371,19 @@ final class OffsideRunScene: SKScene {
         hintLabel.horizontalAlignmentMode = .center
         hintLabel.zPosition = 100
         hudNode.addChild(hintLabel)
+
+        legendLabels = [ItemKind.log, .arch, .maskling].map { kind in
+            let cue = hazardCue(for: kind)
+            let label = SKLabelNode(fontNamed: "AvenirNext-Heavy")
+            label.text = cue.text + "  " + legendName(for: kind)
+            label.fontSize = 13
+            label.fontColor = cue.color
+            label.horizontalAlignmentMode = .center
+            label.verticalAlignmentMode = .center
+            label.zPosition = 100
+            hudNode.addChild(label)
+            return label
+        }
     }
 
     private func buildOverlay() {
@@ -368,6 +406,12 @@ final class OffsideRunScene: SKScene {
         restartLabel.fontColor = UIColor.white.withAlphaComponent(0.92)
         restartLabel.verticalAlignmentMode = .center
         overlayNode.addChild(restartLabel)
+
+        menuLabel.text = "Back to menu"
+        menuLabel.fontSize = 16
+        menuLabel.fontColor = UIColor.white.withAlphaComponent(0.62)
+        menuLabel.verticalAlignmentMode = .center
+        overlayNode.addChild(menuLabel)
     }
 
     private func layoutScene() {
@@ -380,12 +424,20 @@ final class OffsideRunScene: SKScene {
         playerX = laneX(targetLane, depth: 1)
         player.position = CGPoint(x: playerX, y: playerBaseY)
 
-        titleLabel.position = CGPoint(x: 22, y: size.height - 54)
-        heartsLabel.position = CGPoint(x: 24, y: size.height - 92)
-        crownsLabel.position = CGPoint(x: 24, y: size.height - 120)
-        shardsLabel.position = CGPoint(x: 24, y: size.height - 148)
-        distanceLabel.position = CGPoint(x: size.width - 22, y: size.height - 58)
-        hintLabel.position = CGPoint(x: size.width / 2, y: 42)
+        let top = size.height - safeInsets.top
+        let bottom = safeInsets.bottom
+        let leftEdge = 22 + safeInsets.left
+        let rightEdge = size.width - 22 - safeInsets.right
+        titleLabel.position = CGPoint(x: leftEdge, y: top - 30)
+        heartsLabel.position = CGPoint(x: leftEdge + 2, y: top - 68)
+        crownsLabel.position = CGPoint(x: leftEdge + 2, y: top - 96)
+        shardsLabel.position = CGPoint(x: leftEdge + 2, y: top - 124)
+        distanceLabel.position = CGPoint(x: rightEdge, y: top - 34)
+        hintLabel.position = CGPoint(x: size.width / 2, y: bottom + 30)
+        for (index, label) in legendLabels.enumerated() {
+            let slot = (CGFloat(index) + 0.5) / CGFloat(legendLabels.count)
+            label.position = CGPoint(x: size.width * slot, y: bottom + 58)
+        }
 
         if let veil = overlayNode.childNode(withName: "veil") as? SKShapeNode {
             veil.path = CGPath(rect: CGRect(origin: .zero, size: size), transform: nil)
@@ -393,6 +445,7 @@ final class OffsideRunScene: SKScene {
         }
         messageLabel.position = CGPoint(x: size.width / 2, y: size.height / 2 + 34)
         restartLabel.position = CGPoint(x: size.width / 2, y: size.height / 2 - 18)
+        menuLabel.position = CGPoint(x: size.width / 2, y: size.height / 2 - 64)
 
         redrawHillLayer(hillsBack)
         redrawHillLayer(hillsFront)
@@ -520,7 +573,7 @@ final class OffsideRunScene: SKScene {
                 item.active = false
                 item.node.removeFromParent()
             }
-        case .maskling, .thorn:
+        case .maskling:
             if strikeTime > 0 {
                 collect(item)
                 burst(at: item.node.position, color: UIColor(red: 0.73, green: 0.42, blue: 0.78, alpha: 1))
@@ -560,14 +613,12 @@ final class OffsideRunScene: SKScene {
         let lane = Lane.allCases.randomElement() ?? .center
         let roll = Int.random(in: 0...100)
         let kind: ItemKind
-        if roll < 28 {
+        if roll < 36 {
             kind = .log
-        } else if roll < 52 {
+        } else if roll < 68 {
             kind = .arch
-        } else if roll < 78 {
-            kind = .maskling
         } else {
-            kind = .thorn
+            kind = .maskling
         }
         spawn(kind, lane: lane, depth: -0.03)
     }
@@ -589,6 +640,11 @@ final class OffsideRunScene: SKScene {
     private func spawn(_ kind: ItemKind, lane: Lane, depth: CGFloat) {
         let node = makeItemNode(kind)
         let item = RunItem(kind: kind, node: node, lane: lane, depth: depth)
+        if kind.isHazard {
+            let cue = makeCueBadge(hazardCue(for: kind))
+            node.addChild(cue)
+            item.cue = cue
+        }
         itemNode.addChild(node)
         items.append(item)
         layout(item)
@@ -606,6 +662,68 @@ final class OffsideRunScene: SKScene {
             item.node.position.y += sin((distance * 0.06) + depth * 12) * 5 * scale
             item.node.zRotation += 0.04
         }
+        if let cue = item.cue {
+            // Keep the badge a readable, roughly constant size on screen, and
+            // fade it in once the hazard is close enough to react to.
+            cue.setScale(0.9 / scale)
+            let reveal = max(0, min(1, (depth - 0.22) / 0.28))
+            let fadeOut = depth > 0.96 ? max(0, 1 - (depth - 0.96) / 0.1) : 1
+            cue.alpha = reveal * fadeOut
+            cue.position.y = hazardCue(for: item.kind).yOffset + sin(distance * 0.08) * 3
+        }
+    }
+
+    private func hazardCue(for kind: ItemKind) -> HazardCue {
+        switch kind {
+        case .log:
+            return HazardCue(text: "▲ JUMP", color: UIColor(red: 0.98, green: 0.68, blue: 0.22, alpha: 1), yOffset: 46)
+        case .arch:
+            return HazardCue(text: "▼ SLIDE", color: UIColor(red: 0.42, green: 0.72, blue: 0.94, alpha: 1), yOffset: 108)
+        case .maskling:
+            return HazardCue(text: "✕ SWING", color: UIColor(red: 0.95, green: 0.42, blue: 0.50, alpha: 1), yOffset: 62)
+        case .crown, .shard, .heart:
+            return HazardCue(text: "", color: .clear, yOffset: 0)
+        }
+    }
+
+    private func legendName(for kind: ItemKind) -> String {
+        switch kind {
+        case .log: return "Log"
+        case .arch: return "Arch"
+        case .maskling: return "Maskling"
+        case .crown, .shard, .heart: return ""
+        }
+    }
+
+    private func makeCueBadge(_ cue: HazardCue) -> SKNode {
+        let badge = SKNode()
+        badge.name = "cue"
+        badge.zPosition = 5
+        badge.alpha = 0
+
+        let pill = SKShapeNode(rectOf: CGSize(width: 92, height: 26), cornerRadius: 13)
+        pill.fillColor = cue.color
+        pill.strokeColor = UIColor(red: 0.10, green: 0.14, blue: 0.13, alpha: 1)
+        pill.lineWidth = 2
+        badge.addChild(pill)
+
+        let pointer = SKShapeNode(path: trianglePath(width: 14, height: 10))
+        pointer.fillColor = cue.color
+        pointer.strokeColor = .clear
+        pointer.zRotation = .pi
+        pointer.position = CGPoint(x: 0, y: -17)
+        badge.addChild(pointer)
+
+        let label = SKLabelNode(fontNamed: "AvenirNext-Heavy")
+        label.text = cue.text
+        label.fontSize = 14
+        label.fontColor = UIColor(red: 0.10, green: 0.14, blue: 0.13, alpha: 1)
+        label.horizontalAlignmentMode = .center
+        label.verticalAlignmentMode = .center
+        label.position = CGPoint(x: 0, y: 1)
+        badge.addChild(label)
+
+        return badge
     }
 
     private func makeItemNode(_ kind: ItemKind) -> SKNode {
@@ -638,7 +756,7 @@ final class OffsideRunScene: SKScene {
             let group = SKNode()
             let log = SKShapeNode(rectOf: CGSize(width: 92, height: 34), cornerRadius: 15)
             log.fillColor = UIColor(red: 0.43, green: 0.29, blue: 0.16, alpha: 1)
-            log.strokeColor = UIColor(red: 0.18, green: 0.13, blue: 0.08, alpha: 1)
+            log.strokeColor = UIColor(red: 0.98, green: 0.68, blue: 0.22, alpha: 1)
             log.lineWidth = 3
             group.addChild(log)
             for x in [-28, 0, 28] {
@@ -655,13 +773,16 @@ final class OffsideRunScene: SKScene {
             let right = left.copy() as! SKShapeNode
             left.fillColor = UIColor(red: 0.42, green: 0.34, blue: 0.25, alpha: 1)
             right.fillColor = left.fillColor
-            left.strokeColor = .clear
-            right.strokeColor = .clear
+            left.strokeColor = UIColor(red: 0.42, green: 0.72, blue: 0.94, alpha: 1)
+            right.strokeColor = left.strokeColor
+            left.lineWidth = 3
+            right.lineWidth = 3
             left.position = CGPoint(x: -34, y: 20)
             right.position = CGPoint(x: 34, y: 20)
             let top = SKShapeNode(rectOf: CGSize(width: 88, height: 20), cornerRadius: 10)
             top.fillColor = UIColor(red: 0.42, green: 0.34, blue: 0.25, alpha: 1)
-            top.strokeColor = .clear
+            top.strokeColor = UIColor(red: 0.42, green: 0.72, blue: 0.94, alpha: 1)
+            top.lineWidth = 3
             top.position = CGPoint(x: 0, y: 72)
             group.addChild(left)
             group.addChild(right)
@@ -671,7 +792,7 @@ final class OffsideRunScene: SKScene {
             let group = SKNode()
             let body = SKShapeNode(ellipseOf: CGSize(width: 52, height: 58))
             body.fillColor = UIColor(red: 0.36, green: 0.26, blue: 0.45, alpha: 1)
-            body.strokeColor = UIColor(red: 0.16, green: 0.13, blue: 0.18, alpha: 1)
+            body.strokeColor = UIColor(red: 0.95, green: 0.42, blue: 0.50, alpha: 1)
             body.lineWidth = 3
             group.addChild(body)
             let face = SKShapeNode(ellipseOf: CGSize(width: 34, height: 28))
@@ -692,18 +813,6 @@ final class OffsideRunScene: SKScene {
             horn.setScale(0.34)
             horn.position = CGPoint(x: 0, y: 32)
             group.addChild(horn)
-            return group
-        case .thorn:
-            let group = SKNode()
-            for index in 0..<4 {
-                let thorn = SKShapeNode(path: trianglePath(width: 28, height: 62))
-                thorn.fillColor = UIColor(red: 0.28, green: 0.43, blue: 0.24, alpha: 1)
-                thorn.strokeColor = UIColor(red: 0.12, green: 0.20, blue: 0.11, alpha: 1)
-                thorn.lineWidth = 2
-                thorn.position = CGPoint(x: CGFloat(index - 2) * 18 + 9, y: 8)
-                thorn.zRotation = CGFloat(index - 1) * 0.08
-                group.addChild(thorn)
-            }
             return group
         }
     }
@@ -807,7 +916,12 @@ final class OffsideRunScene: SKScene {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         guard let touch = touches.first else { return }
         if isGameOver {
-            resetRun()
+            let location = touch.location(in: self)
+            if menuLabel.frame.insetBy(dx: -24, dy: -16).contains(location) {
+                onExit?()
+            } else {
+                resetRun()
+            }
             return
         }
         startTouch = touch.location(in: self)

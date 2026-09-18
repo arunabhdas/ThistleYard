@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": 1,
+  "id": "whispering-coast",
+  "name": "Whispering Coast",
+  "summary": "Nine little escapes. One beautiful coast.",
+  "holes": [
+    {
+      "id": "whispering-coast-01",
+      "number": 1,
+      "name": "Meadow Start",
+      "par": 3,
+      "distanceYards": 158,
+      "summary": "Find your rhythm on a sunlit meadow, with a generous green and room to learn.",
+      "landmark": "Wildflower windmill"
+    },
+    {
+      "id": "whispering-coast-02",
+      "number": 2,
+      "name": "Orchard Bend",
+      "par": 4,
+      "distanceYards": 325,
+      "summary": "Choose your club and follow a gentle bend through the fruit trees.",
+      "landmark": "Orchard shed"
+    },
+    {
+      "id": "whispering-coast-03",
+      "number": 3,
+      "name": "Ocean Point",
+      "par": 4,
+      "distanceYards": 365,
+      "summary": "Read the sea breeze and favor the welcoming inland fairway.",
+      "landmark": "Clifftop lookout"
+    },
+    {
+      "id": "whispering-coast-04",
+      "number": 4,
+      "name": "Walled Garden",
+      "par": 3,
+      "distanceYards": 145,
+      "summary": "A short approach between warm sand bunkers and flowering garden beds.",
+      "landmark": "Ivy-covered arch"
+    },
+    {
+      "id": "whispering-coast-05",
+      "number": 5,
+      "name": "Clover Valley",
+      "par": 5,
+      "distanceYards": 475,
+      "summary": "Plan a patient route through the rolling clover valley.",
+      "landmark": "White farmhouse"
+    },
+    {
+      "id": "whispering-coast-06",
+      "number": 6,
+      "name": "Heron Crossing",
+      "par": 4,
+      "distanceYards": 340,
+      "summary": "Carry the river or take the longer, gentler route by the bridge.",
+      "landmark": "Heron hide"
+    },
+    {
+      "id": "whispering-coast-07",
+      "number": 7,
+      "name": "Bellflower Rise",
+      "par": 3,
+      "distanceYards": 165,
+      "summary": "Climb toward a hilltop green, then take a moment to read its slope.",
+      "landmark": "Timber bell pavilion"
+    },
+    {
+      "id": "whispering-coast-08",
+      "number": 8,
+      "name": "Pine Passage",
+      "par": 5,
+      "distanceYards": 485,
+      "summary": "Find the clearings and place your shots between the coastal pines.",
+      "landmark": "Ranger cabin"
+    },
+    {
+      "id": "whispering-coast-09",
+      "number": 9,
+      "name": "Lighthouse Home",
+      "par": 4,
+      "distanceYards": 390,
+      "summary": "Bring it home along the headland, with the lighthouse watching over the green.",
+      "landmark": "Coastal lighthouse"
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 2,
+  "asset": "golfer_poses_sheet.png",
+  "creator": "OpenAI image generation, commissioned for OffsideGolf",
+  "method": "Original generated painted pose sheet; runtime SpriteKit subrect cropping, selective shader color mapping, and supplementary procedural hair silhouettes",
+  "sourcePixels": {
+    "width": 1448,
+    "height": 1086
+  },
+  "grid": {
+    "columns": 4,
+    "rows": 3,
+    "cellPixels": 362,
+    "order": "top-left row-major"
+  },
+  "status": "directional-family-review",
+  "facing": "Eight authored right-handed body facings; no mirroring. Body heading is clockwise 90 degrees from shot aim.",
+  "renderPoints": {
+    "width": 58,
+    "height": 58
+  },
+  "clips": [
+    {
+      "name": "idle",
+      "cell": 0,
+      "duration": 2,
+      "loop": true
+    },
+    {
+      "name": "aim",
+      "cell": 1,
+      "duration": 0.25,
+      "hold": true
+    },
+    {
+      "name": "practice",
+      "cell": 2,
+      "duration": 0.8,
+      "launchesBall": false
+    },
+    {
+      "name": "backswing",
+      "cell": 3,
+      "clock": "core swingProgress 0.12 through 0.72"
+    },
+    {
+      "name": "downswing",
+      "cell": 4,
+      "clock": "core swingProgress 0.72 through impact"
+    },
+    {
+      "name": "impact",
+      "cell": 5,
+      "clock": "core activeShotElapsed 0 through 0.065",
+      "authoritativeEvent": false
+    },
+    {
+      "name": "followThrough",
+      "cell": 6,
+      "clock": "core activeShotElapsed 0.065 through 0.35"
+    },
+    {
+      "name": "watchBall",
+      "cell": 7,
+      "hold": "until simulation settles"
+    },
+    {
+      "name": "celebrate",
+      "cell": 8,
+      "duration": 1.2
+    },
+    {
+      "name": "disappointed",
+      "cell": 9,
+      "duration": 0.6
+    },
+    {
+      "name": "putt",
+      "cell": 10,
+      "clock": "core swingProgress and activeShotElapsed through 0.35",
+      "authoritativeEvent": false
+    },
+    {
+      "name": "walk",
+      "cell": 11,
+      "duration": 0.3,
+      "transition": "short step and fade at the newly settled lie"
+    }
+  ],
+  "limitations": [
+    "Twelve authored key poses per facing with transform interpolation; not a separately drawn 12–18 fps animation.",
+    "New facing foot/nape registrations are explicit approximations and require smallest-scale physical-device review.",
+    "All skin/outfit palettes and hair registrations require physical-device review."
+  ],
+  "directionalAssets": {
+    "southEast": "golfer_poses_sheet.png",
+    "north": "golfer_north.png",
+    "east": "golfer_east.png",
+    "west": "golfer_west.png",
+    "south": "golfer_south.png",
+    "southWest": "golfer_southWest.png",
+    "northEast": "golfer_northEast.png",
+    "northWest": "golfer_northWest.png"
+  },
+  "directionalProvenance": "ArtSource/directional-golfer-prompts.json"
+}

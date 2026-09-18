@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 1,
+  "assets": [
+    {
+      "id": "coast_environment_sheet",
+      "path": "App/Resources/Textures/coast_environment_sheet.png",
+      "width": 1448,
+      "height": 1086,
+      "creator": "Original AI-assisted OffsideGolf artwork",
+      "method": "Built-in image_gen",
+      "status": "production-candidate",
+      "provenance": "ArtSource/GENERATED_ASSETS.md"
+    },
+    {
+      "id": "coast_menu",
+      "path": "App/Resources/Assets.xcassets/CoastMenu.imageset/coast_menu.png",
+      "width": 1536,
+      "height": 1024,
+      "creator": "Original AI-assisted OffsideGolf artwork",
+      "method": "Built-in image_gen",
+      "status": "production-candidate",
+      "provenance": "ArtSource/GENERATED_ASSETS.md"
+    },
+    {
+      "id": "golfer_poses_sheet",
+      "path": "App/Resources/Textures/golfer_poses_sheet.png",
+      "width": 1448,
+      "height": 1086,
+      "creator": "Original AI-assisted OffsideGolf artwork",
+      "method": "Built-in image_gen",
+      "status": "production-candidate",
+      "provenance": "ArtSource/GENERATED_ASSETS.md"
+    },
+    {
+      "id": "terrain_sheet",
+      "path": "App/Resources/Textures/terrain_sheet.png",
+      "width": 1254,
+      "height": 1254,
+      "creator": "Original AI-assisted OffsideGolf artwork",
+      "method": "Built-in image_gen",
+      "status": "production-candidate",
+      "provenance": "ArtSource/GENERATED_ASSETS.md"
+    },
+    {
+      "id": "golfer_north",
+      "path": "App/Resources/Textures/golfer_north.png",
+      "width": 1448,
+      "height": 1086,
+      "creator": "Original AI-assisted OffsideGolf artwork",
+      "method": "Built-in image_gen, identity-preserving directional variant",
+      "status": "production-candidate",
+      "provenance": "ArtSource/directional-golfer-prompts.json"
+    },
+    {
+      "id": "golfer_east",
+      "path": "App/Resources/Textures/golfer_east.png",
+      "width": 1448,
+      "height": 1086,
+      "creator": "Original AI-assisted OffsideGolf artwork",
+      "method": "Built-in image_gen, identity-preserving directional variant",
+      "status": "production-candidate",
+      "provenance": "ArtSource/directional-golfer-prompts.json"
+    },
+    {
+      "id": "golfer_west",
+      "path": "App/Resources/Textures/golfer_west.png",
+      "width": 1448,
+      "height": 1086,
+      "creator": "Original AI-assisted OffsideGolf artwork",
+      "method": "Built-in image_gen, identity-preserving directional variant",
+      "status": "production-candidate",
+      "provenance": "ArtSource/directional-golfer-prompts.json"
+    },
+    {
+      "id": "golfer_south",
+      "path": "App/Resources/Textures/golfer_south.png",
+      "width": 1448,
+      "height": 1086,
+      "creator": "Original AI-assisted OffsideGolf artwork",
+      "method": "Built-in image_gen, identity-preserving directional variant",
+      "status": "production-candidate",
+      "provenance": "ArtSource/directional-golfer-prompts.json"
+    },
+    {
+      "id": "golfer_southWest",
+      "path": "App/Resources/Textures/golfer_southWest.png",
+      "width": 1448,
+      "height": 1086,
+      "creator": "Original AI-assisted OffsideGolf artwork",
+      "method": "Built-in image_gen, identity-preserving directional variant",
+      "status": "production-candidate",
+      "provenance": "ArtSource/directional-golfer-prompts.json"
+    },
+    {
+      "id": "golfer_northEast",
+      "path": "App/Resources/Textures/golfer_northEast.png",
+      "width": 1448,
+      "height": 1086,
+      "creator": "Original AI-assisted OffsideGolf artwork",
+      "method": "Built-in image_gen, identity-preserving directional variant",
+      "status": "production-candidate",
+      "provenance": "ArtSource/directional-golfer-prompts.json"
+    },
+    {
+      "id": "golfer_northWest",
+      "path": "App/Resources/Textures/golfer_northWest.png",
+      "width": 1448,
+      "height": 1086,
+      "creator": "Original AI-assisted OffsideGolf artwork",
+      "method": "Built-in image_gen, identity-preserving directional variant",
+      "status": "production-candidate",
+      "provenance": "ArtSource/directional-golfer-prompts.json"
+    }
+  ],
+  "audioProvenance": "Audio/provenance.json",
+  "releaseNotes": [
+    "Eight authored body facings each contain twelve key poses; final palette/registration and physical-device art review remains open.",
+    "Simulator verification is not physical-device performance or sensory verification."
+  ]
+}
