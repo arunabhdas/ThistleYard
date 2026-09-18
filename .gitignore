@@ -19,9 +19,14 @@ DerivedData/
 # ---- Xcode user state ----
 # Shared scheme/workspace settings stay tracked; only per-user state is ignored.
 xcuserdata/
+*.xcuserdatad/
 *.xcuserstate
 *.xcscmblueprint
 *.moved-aside
+*.xcworkspace/xcuserdata/
+# Xcode recreates these local workspace health/settings files.
+*.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+*.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings
 
 # ---- Swift Package Manager ----
 .build/

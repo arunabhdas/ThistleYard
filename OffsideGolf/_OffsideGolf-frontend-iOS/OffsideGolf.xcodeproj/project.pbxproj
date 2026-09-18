@@ -128,13 +128,13 @@
 		3012AC22137258529DB3B948 /* golfer_northEast.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = golfer_northEast.png; sourceTree = "<group>"; };
 		30B0447F10061DC011E428D1 /* CourseContentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseContentTests.swift; sourceTree = "<group>"; };
 		4105C020B1C826821145902C /* GameSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSession.swift; sourceTree = "<group>"; };
-		430413CD46CF4665B22AB01A /* OffsideGolf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OffsideGolf.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		430413CD46CF4665B22AB01A /* OffsideGolf.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = OffsideGolf.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48F285CC45686E10AA35F40C /* RoundFlowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundFlowTests.swift; sourceTree = "<group>"; };
 		498C19D1CA3A192922D6A5C4 /* golf_splash.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = golf_splash.wav; sourceTree = "<group>"; };
 		4AB3537D3328FE1E55237E2D /* GolferFacingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GolferFacingTests.swift; sourceTree = "<group>"; };
 		4DD333A20FB2111E0191CCB8 /* golfer_poses_sheet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = golfer_poses_sheet.png; sourceTree = "<group>"; };
 		4E5077FF344DD5622742149C /* golf_cup.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = golf_cup.wav; sourceTree = "<group>"; };
-		4EE3EE4FD57F242BCBC9EAB5 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		4EE3EE4FD57F242BCBC9EAB5 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		52EA0EDC9A33CB1057CE2C16 /* BallRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallRenderer.swift; sourceTree = "<group>"; };
 		540ECE36D98707A5510141C1 /* CoursePreviewScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursePreviewScene.swift; sourceTree = "<group>"; };
 		580EA4532DD8BBB6282843CC /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
@@ -149,12 +149,12 @@
 		8016669B8E220D3BF9BC7CBC /* provenance.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = provenance.json; sourceTree = "<group>"; };
 		80CE0D5D174A40260E7203B1 /* whispering-coast-09.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "whispering-coast-09.json"; sourceTree = "<group>"; };
 		8314AD5576FF561CA649595F /* ScorecardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScorecardView.swift; sourceTree = "<group>"; };
-		8395C2FAFC900CAAB5438E58 /* coast_waves.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = coast_waves.m4a; sourceTree = "<group>"; };
+		8395C2FAFC900CAAB5438E58 /* coast_waves.m4a */ = {isa = PBXFileReference; path = coast_waves.m4a; sourceTree = "<group>"; };
 		845DC950B0F41FA1DF665367 /* AppCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinatorTests.swift; sourceTree = "<group>"; };
 		8517C50E00CF231A04E00DC9 /* golf_roll.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = golf_roll.wav; sourceTree = "<group>"; };
 		8A59FABDC6910CCB33D44DE1 /* whispering-coast-08.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "whispering-coast-08.json"; sourceTree = "<group>"; };
-		8CE6B40061EC7028F0F5AA10 /* coast_music.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = coast_music.m4a; sourceTree = "<group>"; };
-		8FDBC10273FD4514059B9738 /* coast_birds.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = coast_birds.m4a; sourceTree = "<group>"; };
+		8CE6B40061EC7028F0F5AA10 /* coast_music.m4a */ = {isa = PBXFileReference; path = coast_music.m4a; sourceTree = "<group>"; };
+		8FDBC10273FD4514059B9738 /* coast_birds.m4a */ = {isa = PBXFileReference; path = coast_birds.m4a; sourceTree = "<group>"; };
 		91BAC0E03B4BF3A28F96437A /* HolePreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolePreviewView.swift; sourceTree = "<group>"; };
 		94E9C5177345394CF60B9AC1 /* golf_swing.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = golf_swing.wav; sourceTree = "<group>"; };
 		96308C0C55264DDD146F1FA4 /* SwingControls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwingControls.swift; sourceTree = "<group>"; };
@@ -176,7 +176,7 @@
 		C90929D04E921C1AAF8EA04A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9D64B43E429C1B03E5A9824 /* OffsideGolfCore */ = {isa = PBXFileReference; lastKnownFileType = folder; name = OffsideGolfCore; path = ../Packages/OffsideGolfCore; sourceTree = SOURCE_ROOT; };
 		CA480C0FFD9ADA219532F8CB /* AudioManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManagerTests.swift; sourceTree = "<group>"; };
-		CF35FDE8F98369FFF41C6F99 /* coast_wind.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = coast_wind.m4a; sourceTree = "<group>"; };
+		CF35FDE8F98369FFF41C6F99 /* coast_wind.m4a */ = {isa = PBXFileReference; path = coast_wind.m4a; sourceTree = "<group>"; };
 		D08B9D852F5C4DBFCE264288 /* CourseOverviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseOverviewView.swift; sourceTree = "<group>"; };
 		D21BE7C8CFBD94FC10DBF0C0 /* whispering-coast-02.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "whispering-coast-02.json"; sourceTree = "<group>"; };
 		D21F6DC07F7DB6AFF8A3BF57 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
@@ -510,13 +510,16 @@
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					097D476513FB45F72A72EF6C = {
+						DevelopmentTeam = 9L38FSU6M7;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 2495207DCBBBEABC063C3E8D;
 					};
 					2495207DCBBBEABC063C3E8D = {
+						DevelopmentTeam = 9L38FSU6M7;
 						ProvisioningStyle = Automatic;
 					};
 					B151E95281D8B04012261E0B = {
+						DevelopmentTeam = 9L38FSU6M7;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -706,7 +709,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 2;
-				DEVELOPMENT_TEAM = 9L38FSU6M7;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -794,6 +796,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 9L38FSU6M7;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -829,7 +832,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 2;
-				DEVELOPMENT_TEAM = 9L38FSU6M7;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -881,6 +883,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 9L38FSU6M7;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = NO;
